@@ -1,6 +1,6 @@
-name: 'Android Build'
-description: 'Build Android projects'
-author: 'Veaceslav Gaidarji <veaceslav.gaidarji@gmail.com>'
+name: 'Treble Build'
+description: 'Build Android Treble GSI image'
+author: 'Lesur Frederic <contact@memiks.fr>'
 branding:
   icon: 'box'
   color: 'green'
