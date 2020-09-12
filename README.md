@@ -6,7 +6,7 @@ A GitHub Action for building Android GSI.
 
 ```yml
 - name: "Build Android treble GSI image"
-  uses: memiks/treble-build-github-actions@v0.0.1
+  uses: memiks/treble-build-github-actions@v0.0.2
   with:
     args: "/bin/bash /treble/build-dakkar.sh rr arm-aonly-gapps-su arm64-ab-go-nosu"
 ```
