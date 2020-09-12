@@ -1,34 +1,27 @@
-# Android build GitHub Action
+# Android treble build GitHub Action
 
-A GitHub Action for building Android projects.
+A GitHub Action for building Android GSI.
 
 # Usage
 
 ```yml
-- name: "Build Android project"
-  uses: vgaidarji/android-github-actions-build@v1.0.1
+- name: "Build Android treble GSI image"
+  uses: memiks/treble-build-github-actions@v0.0.1
   with:
-    args: "./gradlew assembleDebug"
+    args: "/bin/bash /treble/build-dakkar.sh rr arm-aonly-gapps-su arm64-ab-go-nosu"
 ```
 
-Specify via `args` the Gradle tasks to run.
+Specify via `args` the Treble tasks to run.
 
 Developed By
 ------------
 
-* Veaceslav Gaidarji - <veaceslav.gaidarji@gmail.com>
-
-<a href="https://twitter.com/v_gaidarji">
-  <img alt="Follow me on Twitter" src="http://image.flaticon.com/icons/svg/124/124021.svg" height="40" width="40"/>
-</a>
-<a href="https://www.linkedin.com/in/veaceslavgaidarji">
-  <img alt="Add me to Linkedin" src="http://image.flaticon.com/icons/svg/124/124011.svg" height="40" width="40"/>
-</a>
+* Lesur Frederic - <contact@memiks.fr>
 
 License
 -------
 
-    Copyright 2019 Veaceslav Gaidarji
+    Copyright 2020 Lesur Frederic
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
